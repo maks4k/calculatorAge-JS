@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+  <title>Age calculator app</title>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="app">
+    <div class="calculator">
+      <div class="calculator__top">
+        <div class="calculator__input-wrapper">
+          <span class="input-wrapper__label">day</span>
+          <input placeholder="DD" class="input-wrapper__input" type="number" id="input__day" />
+          <span class="error_msg hidden">must be a vailed day</span>
+        </div>
+
+        <div class="calculator__input-wrapper">
+          <span class="input-wrapper__label">Month</span>
+          <input placeholder="MM" class="input-wrapper__input" type="number" id="input__month"/>
+          <span class="error_msg hidden">must be a vailed Month</span>
+        </div>
+
+        <div class="calculator__input-wrapper">
+          <span class="input-wrapper__label">Year</span>
+          <input placeholder="YYYY" class="input-wrapper__input" type="number" id="input__year" />
+          <span class="error_msg hidden">must be a vailed year</span>
+        </div>
+        <button class="calculator__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+            </g>
+          </svg>
+        </button>
+      </div>
+      <div class="calculator__results">
+        <div class="results__item">
+          <span class="item__number">32</span><span class="item__title">years</span>
+        </div>
+        <div class="results__item">
+          <span class="item__number">12</span><span class="item__title">months</span>
+        </div>
+        <div class="results__item">
+          <span class="item__number">26</span><span class="item__title">days</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js.js"></script>
+</body>
+
+</html>

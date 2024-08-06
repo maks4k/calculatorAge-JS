@@ -1,0 +1,164 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  font-size: 32px;
+  position: relative;
+}
+
+/* body::after {
+  position: absolute;
+  top: 0;
+  background-image: url(./design/mobile-design.jpg);
+  content: "";
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  height: 960px;
+  pointer-events: none;
+} */
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: hsl(0, 0%, 100%);
+  height: 650px;
+  width: 840px;
+  border-radius: 25px 25px 195px 25px;
+  padding: 57px;
+  padding-top: 60px;
+}
+
+.calculator__top {
+  display: flex;
+  border-bottom: 1px solid hsl(0, 0%, 94%);
+  padding-bottom: 48px;
+  position: relative;
+}
+
+.calculator__input-wrapper {
+  position: relative;
+  margin-right: 32px;
+}
+
+.input-wrapper__label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.4em;
+  letter-spacing: 3.8px;
+  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+  margin-bottom: 10px;
+}
+
+.input-wrapper__input {
+  width: 160px;
+  font-size: 1em;
+  border: 1px solid hsl(0, 0%, 94%);
+  font-weight: 700;
+  padding: 11px 21px;
+  border-radius: 5px;
+}
+
+.calculator__btn {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: 0;
+  background-color: hsl(259, 100%, 65%);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(50%);
+  padding-top: 5px;
+}
+
+.calculator__results {
+  font-style: italic;
+}
+
+.results__item {
+  font-size: 3.25em;
+  font-weight: 700;
+  position: relative;
+  letter-spacing: -2px;
+  line-height: 113px;
+  top: 48px;
+}
+
+.item__number {
+  color: hsl(259, 100%, 65%);
+}
+
+.item__title {
+  padding-left: 10px;
+}
+.error_msg{
+  color: red;
+  font-size: 10px;
+  display: block;
+}
+.hidden{
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  #app {
+    padding: 0 15px;
+  }
+  .calculator {
+    width: 100%;
+    height: auto;
+    padding: 0 25px;
+    padding-top: 48px;
+  }
+  .calculator__top {
+    justify-content: space-between;
+    padding-bottom: 62px;
+  }
+  .calculator__input-wrapper {
+    width: 30%;
+    margin-right: 0;
+  }
+  .input-wrapper__input {
+    width: 100%;
+    padding: 2px 15px;
+    font-size: 0.65em;
+    height: 55px;
+  }
+  .input-wrapper__label {
+    letter-spacing: 2.5px;
+    margin-bottom: 4px;
+  }
+  .calculator__btn {
+    left: 50%;
+    width: 65px;
+    height: 65px;
+    transform: translate(-50%, 50%);
+  }
+  .calculator__results {
+    height: 300px;
+    padding-top: 18px;
+  }
+  .results__item {
+    line-height: 61px;
+    font-size: 1.72em;
+    letter-spacing: -0.5px;
+  }
+}/*# sourceMappingURL=style.css.map */
